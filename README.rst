@@ -57,7 +57,7 @@ At the moment, this process requires coordination with an employee at edX since 
 
     "course-v1\\:ORGx\\+5\\.555x_review\\+1T2018"
 
-.. _Optimizely: https://app.optimizely.com/v2/projects/1743970571
+.. _Optimizely: https://app.optimizely.com/v2/projects/27831640741
 
 5. \* **EdX Employee Required** \* Create a Pull Request in `XBlock Review`_ that adds the original course key to SHOW_PROBLEMS or SHOW_VERTICAL as applicable to the course and a mapping of the original course to the shadow course in REVIEW_COURSE_MAPPING and ENROLLMENT_COURSE_MAPPING into **review/configuration.py**. In the same PR, update the version number in **setup.py**. Once the PR is merged, have an edX employee click on the `releases tab`_ and then click "Draft a new release." Under the tag version, write in the version from the PR in the **setup.py** file and give a title that gives a short description of the change made in the PR (e.g. "Adding in 5.555 to Review XBlock"). Make sure the new version is pushed to PyPI and then submit a Pull Request to `edX Platform`_ changing the version number for xblock-review in the requirements directory. Use this `search`_ to find where it is located in the repository. Ensure the Review XBlock version number is the same as the version you pushed to PyPI. An example of the change is below.
 
